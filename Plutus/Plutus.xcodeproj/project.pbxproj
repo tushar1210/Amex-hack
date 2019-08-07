@@ -12,9 +12,11 @@
 		78A34FFD22F610B60012DBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A34FFB22F610B60012DBE2 /* Main.storyboard */; };
 		78A34FFF22F610BE0012DBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A34FFE22F610BE0012DBE2 /* Assets.xcassets */; };
 		78A3500222F610BE0012DBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A3500022F610BE0012DBE2 /* LaunchScreen.storyboard */; };
+		EE99B0BA039293065488393C /* Pods_Plutus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12A571A9C626B0F50D76486 /* Pods_Plutus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		203AFE285953ACFC96FD667E /* Pods-Plutus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plutus.debug.xcconfig"; path = "Target Support Files/Pods-Plutus/Pods-Plutus.debug.xcconfig"; sourceTree = "<group>"; };
 		78A34FF422F610B60012DBE2 /* Plutus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plutus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A34FF722F610B60012DBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A34FF922F610B60012DBE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		78A34FFE22F610BE0012DBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78A3500122F610BE0012DBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78A3500322F610BE0012DBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B12A571A9C626B0F50D76486 /* Pods_Plutus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plutus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF42D6227F8194FF6CE3918F /* Pods-Plutus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plutus.release.xcconfig"; path = "Target Support Files/Pods-Plutus/Pods-Plutus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE99B0BA039293065488393C /* Pods_Plutus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				78A34FF622F610B60012DBE2 /* Plutus */,
 				78A34FF522F610B60012DBE2 /* Products */,
+				CAD6A631019D8A9BBAF6C239 /* Pods */,
+				B699A3F5AA4B6E4FAA4641BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = Plutus;
 			sourceTree = "<group>";
 		};
+		B699A3F5AA4B6E4FAA4641BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B12A571A9C626B0F50D76486 /* Pods_Plutus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAD6A631019D8A9BBAF6C239 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				203AFE285953ACFC96FD667E /* Pods-Plutus.debug.xcconfig */,
+				FF42D6227F8194FF6CE3918F /* Pods-Plutus.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78A3500622F610BE0012DBE2 /* Build configuration list for PBXNativeTarget "Plutus" */;
 			buildPhases = (
+				02E82DE267580A411B182B9E /* [CP] Check Pods Manifest.lock */,
 				78A34FF022F610B60012DBE2 /* Sources */,
 				78A34FF122F610B60012DBE2 /* Frameworks */,
 				78A34FF222F610B60012DBE2 /* Resources */,
+				CF97578F3620D0601B37F908 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E82DE267580A411B182B9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plutus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF97578F3620D0601B37F908 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plutus/Pods-Plutus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plutus/Pods-Plutus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Plutus/Pods-Plutus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78A34FF022F610B60012DBE2 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		78A3500722F610BE0012DBE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 203AFE285953ACFC96FD667E /* Pods-Plutus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		78A3500822F610BE0012DBE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF42D6227F8194FF6CE3918F /* Pods-Plutus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
