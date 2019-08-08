@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7844503D22FB4C770057DAE6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844503C22FB4C770057DAE6 /* MainViewController.swift */; };
+		7844503F22FB4F310057DAE6 /* coins.json in Resources */ = {isa = PBXBuildFile; fileRef = 7844503E22FB4F310057DAE6 /* coins.json */; };
+		78A34FF822F610B60012DBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A34FF722F610B60012DBE2 /* AppDelegate.swift */; };
+		78A34FFA22F610B60012DBE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A34FF922F610B60012DBE2 /* LoginViewController.swift */; };
+		78A34FFD22F610B60012DBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A34FFB22F610B60012DBE2 /* Main.storyboard */; };
+		78A34FFF22F610BE0012DBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A34FFE22F610BE0012DBE2 /* Assets.xcassets */; };
+		78A3500222F610BE0012DBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A3500022F610BE0012DBE2 /* LaunchScreen.storyboard */; };
+		EE99B0BA039293065488393C /* Pods_Plutus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12A571A9C626B0F50D76486 /* Pods_Plutus.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		203AFE285953ACFC96FD667E /* Pods-Plutus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plutus.debug.xcconfig"; path = "Target Support Files/Pods-Plutus/Pods-Plutus.debug.xcconfig"; sourceTree = "<group>"; };
+		7844503C22FB4C770057DAE6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7844503E22FB4F310057DAE6 /* coins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = coins.json; path = "lottie-assets/coins.json"; sourceTree = SOURCE_ROOT; };
+		7844504122FB62C70057DAE6 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		7844504222FB62C70057DAE6 /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
+		7844504322FB62C80057DAE6 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		7844504422FB62C80057DAE6 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		7844504522FB62C80057DAE6 /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		7844504622FB62C80057DAE6 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		7844504722FB62C80057DAE6 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		7844504822FB62C80057DAE6 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		7844504922FB62C80057DAE6 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		7844504A22FB62C80057DAE6 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		7844504B22FB62C80057DAE6 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		7844504C22FB62C80057DAE6 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		7844504D22FB62C80057DAE6 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		7844504E22FB62C90057DAE6 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		78A34FF422F610B60012DBE2 /* Plutus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plutus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A34FF722F610B60012DBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78A34FF922F610B60012DBE2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		78A34FFC22F610B60012DBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78A34FFE22F610BE0012DBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78A3500122F610BE0012DBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78A3500322F610BE0012DBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B12A571A9C626B0F50D76486 /* Pods_Plutus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plutus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF42D6227F8194FF6CE3918F /* Pods-Plutus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plutus.release.xcconfig"; path = "Target Support Files/Pods-Plutus/Pods-Plutus.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78A34FF122F610B60012DBE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE99B0BA039293065488393C /* Pods_Plutus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7844504022FB61340057DAE6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7844504422FB62C80057DAE6 /* SF-Pro-Display-Black.otf */,
+				7844504922FB62C80057DAE6 /* SF-Pro-Display-Bold.otf */,
+				7844504122FB62C70057DAE6 /* SF-Pro-Display-Heavy.otf */,
+				7844504B22FB62C80057DAE6 /* SF-Pro-Display-Light.otf */,
+				7844504D22FB62C80057DAE6 /* SF-Pro-Display-Medium.otf */,
+				7844504722FB62C80057DAE6 /* SF-Pro-Display-Regular.otf */,
+				7844504A22FB62C80057DAE6 /* SF-Pro-Display-Semibold.otf */,
+				7844504222FB62C70057DAE6 /* SF-Pro-Display-Thin.otf */,
+				7844504622FB62C80057DAE6 /* SF-Pro-Text-Bold.otf */,
+				7844504C22FB62C80057DAE6 /* SF-Pro-Text-Heavy.otf */,
+				7844504522FB62C80057DAE6 /* SF-Pro-Text-Light.otf */,
+				7844504E22FB62C90057DAE6 /* SF-Pro-Text-Medium.otf */,
+				7844504322FB62C80057DAE6 /* SF-Pro-Text-Regular.otf */,
+				7844504822FB62C80057DAE6 /* SF-Pro-Text-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		78A34FEB22F610B60012DBE2 = {
+			isa = PBXGroup;
+			children = (
+				78A34FF622F610B60012DBE2 /* Plutus */,
+				78A34FF522F610B60012DBE2 /* Products */,
+				CAD6A631019D8A9BBAF6C239 /* Pods */,
+				B699A3F5AA4B6E4FAA4641BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78A34FF522F610B60012DBE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78A34FF422F610B60012DBE2 /* Plutus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78A34FF622F610B60012DBE2 /* Plutus */ = {
+			isa = PBXGroup;
+			children = (
+				78A34FF722F610B60012DBE2 /* AppDelegate.swift */,
+				78A34FF922F610B60012DBE2 /* LoginViewController.swift */,
+				78A34FFB22F610B60012DBE2 /* Main.storyboard */,
+				7844503C22FB4C770057DAE6 /* MainViewController.swift */,
+				78A34FFE22F610BE0012DBE2 /* Assets.xcassets */,
+				78A3500022F610BE0012DBE2 /* LaunchScreen.storyboard */,
+				78A3500322F610BE0012DBE2 /* Info.plist */,
+				7844504022FB61340057DAE6 /* Fonts */,
+				7844503E22FB4F310057DAE6 /* coins.json */,
+			);
+			path = Plutus;
+			sourceTree = "<group>";
+		};
+		B699A3F5AA4B6E4FAA4641BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B12A571A9C626B0F50D76486 /* Pods_Plutus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAD6A631019D8A9BBAF6C239 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				203AFE285953ACFC96FD667E /* Pods-Plutus.debug.xcconfig */,
+				FF42D6227F8194FF6CE3918F /* Pods-Plutus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78A34FF322F610B60012DBE2 /* Plutus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78A3500622F610BE0012DBE2 /* Build configuration list for PBXNativeTarget "Plutus" */;
+			buildPhases = (
+				02E82DE267580A411B182B9E /* [CP] Check Pods Manifest.lock */,
+				78A34FF022F610B60012DBE2 /* Sources */,
+				78A34FF122F610B60012DBE2 /* Frameworks */,
+				78A34FF222F610B60012DBE2 /* Resources */,
+				CF97578F3620D0601B37F908 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plutus;
+			productName = Plutus;
+			productReference = 78A34FF422F610B60012DBE2 /* Plutus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78A34FEC22F610B60012DBE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Tushar Singh";
+				TargetAttributes = {
+					78A34FF322F610B60012DBE2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 78A34FEF22F610B60012DBE2 /* Build configuration list for PBXProject "Plutus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78A34FEB22F610B60012DBE2;
+			productRefGroup = 78A34FF522F610B60012DBE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78A34FF322F610B60012DBE2 /* Plutus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78A34FF222F610B60012DBE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A3500222F610BE0012DBE2 /* LaunchScreen.storyboard in Resources */,
+				78A34FFF22F610BE0012DBE2 /* Assets.xcassets in Resources */,
+				7844503F22FB4F310057DAE6 /* coins.json in Resources */,
+				78A34FFD22F610B60012DBE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E82DE267580A411B182B9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plutus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF97578F3620D0601B37F908 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plutus/Pods-Plutus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plutus/Pods-Plutus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Plutus/Pods-Plutus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78A34FF022F610B60012DBE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7844503D22FB4C770057DAE6 /* MainViewController.swift in Sources */,
+				78A34FFA22F610B60012DBE2 /* LoginViewController.swift in Sources */,
+				78A34FF822F610B60012DBE2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78A34FFB22F610B60012DBE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78A34FFC22F610B60012DBE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78A3500022F610BE0012DBE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78A3500122F610BE0012DBE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78A3500422F610BE0012DBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78A3500522F610BE0012DBE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78A3500722F610BE0012DBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 203AFE285953ACFC96FD667E /* Pods-Plutus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDDB7WX63J;
+				INFOPLIST_FILE = Plutus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tushar.Plutus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78A3500822F610BE0012DBE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF42D6227F8194FF6CE3918F /* Pods-Plutus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDDB7WX63J;
+				INFOPLIST_FILE = Plutus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tushar.Plutus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78A34FEF22F610B60012DBE2 /* Build configuration list for PBXProject "Plutus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A3500422F610BE0012DBE2 /* Debug */,
+				78A3500522F610BE0012DBE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78A3500622F610BE0012DBE2 /* Build configuration list for PBXNativeTarget "Plutus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A3500722F610BE0012DBE2 /* Debug */,
+				78A3500822F610BE0012DBE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78A34FEC22F610B60012DBE2 /* Project object */;
+}

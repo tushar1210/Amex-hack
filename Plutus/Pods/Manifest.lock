@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Charts (3.3.0):
+    - Charts/Core (= 3.3.0)
+  - Charts/Core (3.3.0)
+  - lottie-ios (3.1.0)
+  - SwiftCharts (0.6.5)
+  - SwiftyJSON (5.0.0)
+  - YRPayment (1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts
+  - lottie-ios
+  - SwiftCharts
+  - SwiftyJSON
+  - YRPayment
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Charts
+    - lottie-ios
+    - SwiftCharts
+    - SwiftyJSON
+    - YRPayment
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
+  lottie-ios: 9467723922dfff46f6d4e3019c32594a62440b7c
+  SwiftCharts: 2e755ea292f0b87d3e4b2c1eb5afc080a20cdc15
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  YRPayment: a1454f723dfde4edb8e746d24d9430b0e7a1359d
+
+PODFILE CHECKSUM: b8dc8cef91afc7d9b3a86cd9a6ae9b72af4f0c59
+
+COCOAPODS: 1.7.5
