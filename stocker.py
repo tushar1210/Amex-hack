@@ -12,8 +12,6 @@ import matplotlib.pyplot as plt
 
 import matplotlib
 
-# Class for analyzing and (attempting) to predict future prices
-# Contains a number of visualizations and analysis methods
 class Stocker():
     
     # Initialization requires a ticker symbol
@@ -91,10 +89,7 @@ class Stocker():
                                                                      self.min_date,
                                                                      self.max_date))
     
-    """
-    Make sure start and end dates are in the range and can be
-    converted to pandas datetimes. Returns dates in the correct format
-    """
+    
     def handle_dates(self, start_date, end_date):
         
         
