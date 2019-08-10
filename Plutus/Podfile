@@ -7,10 +7,13 @@ target 'Plutus' do
    pod 'Alamofire'
    pod 'SwiftyJSON'
    #pod 'Realm'
-   pod 'Charts'
+   #pod 'Charts'
    pod 'SwiftCharts'
    pod 'lottie-ios'
-pod "YRPayment"
+   pod 'Firebase/Core'
+   pod 'Firebase/Database'
+   pod 'YRPayment'
+   pod 'SVProgressHUD'
   # Pods for Plutus
 
 end

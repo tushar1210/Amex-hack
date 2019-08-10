@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		7844503D22FB4C770057DAE6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844503C22FB4C770057DAE6 /* MainViewController.swift */; };
 		7844503F22FB4F310057DAE6 /* coins.json in Resources */ = {isa = PBXBuildFile; fileRef = 7844503E22FB4F310057DAE6 /* coins.json */; };
+		7844505322FB66C10057DAE6 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844505222FB66C10057DAE6 /* CardViewCell.swift */; };
+		7844505522FB70C00057DAE6 /* ChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844505422FB70C00057DAE6 /* ChartTableViewCell.swift */; };
+		7885D39222FCB62E00843221 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7885D39122FCB62E00843221 /* GoogleService-Info.plist */; };
+		7885D39422FD1FF200843221 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7885D39322FD1FF200843221 /* ProfileViewController.swift */; };
+		7885D39622FD256C00843221 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7885D39522FD256C00843221 /* TransactionTableViewCell.swift */; };
+		7885D39822FD290000843221 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7885D39722FD290000843221 /* SearchViewController.swift */; };
+		7885D39A22FD4E4A00843221 /* SuggestedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7885D39922FD4E4A00843221 /* SuggestedCollectionViewCell.swift */; };
+		7885D39C22FD4E5B00843221 /* FavouriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7885D39B22FD4E5B00843221 /* FavouriteCollectionViewCell.swift */; };
 		78A34FF822F610B60012DBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A34FF722F610B60012DBE2 /* AppDelegate.swift */; };
 		78A34FFA22F610B60012DBE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A34FF922F610B60012DBE2 /* LoginViewController.swift */; };
 		78A34FFD22F610B60012DBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A34FFB22F610B60012DBE2 /* Main.storyboard */; };
@@ -35,6 +43,14 @@
 		7844504C22FB62C80057DAE6 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
 		7844504D22FB62C80057DAE6 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		7844504E22FB62C90057DAE6 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		7844505222FB66C10057DAE6 /* CardViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; usesTabs = 1; };
+		7844505422FB70C00057DAE6 /* ChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTableViewCell.swift; sourceTree = "<group>"; };
+		7885D39122FCB62E00843221 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7885D39322FD1FF200843221 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Plutus/Controller/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		7885D39522FD256C00843221 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		7885D39722FD290000843221 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Plutus/View/SearchViewController.swift; sourceTree = SOURCE_ROOT; };
+		7885D39922FD4E4A00843221 /* SuggestedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedCollectionViewCell.swift; sourceTree = "<group>"; };
+		7885D39B22FD4E5B00843221 /* FavouriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCollectionViewCell.swift; sourceTree = "<group>"; };
 		78A34FF422F610B60012DBE2 /* Plutus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plutus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A34FF722F610B60012DBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A34FF922F610B60012DBE2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +95,37 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		7844504F22FB66810057DAE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7844505022FB66900057DAE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7885D39522FD256C00843221 /* TransactionTableViewCell.swift */,
+				7844505422FB70C00057DAE6 /* ChartTableViewCell.swift */,
+				7844505222FB66C10057DAE6 /* CardViewCell.swift */,
+				7885D39922FD4E4A00843221 /* SuggestedCollectionViewCell.swift */,
+				7885D39B22FD4E5B00843221 /* FavouriteCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7844505122FB66960057DAE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7885D39722FD290000843221 /* SearchViewController.swift */,
+				7844503C22FB4C770057DAE6 /* MainViewController.swift */,
+				78A34FF722F610B60012DBE2 /* AppDelegate.swift */,
+				78A34FF922F610B60012DBE2 /* LoginViewController.swift */,
+				7885D39322FD1FF200843221 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		78A34FEB22F610B60012DBE2 = {
 			isa = PBXGroup;
 			children = (
@@ -100,13 +147,14 @@
 		78A34FF622F610B60012DBE2 /* Plutus */ = {
 			isa = PBXGroup;
 			children = (
-				78A34FF722F610B60012DBE2 /* AppDelegate.swift */,
-				78A34FF922F610B60012DBE2 /* LoginViewController.swift */,
+				7844504F22FB66810057DAE6 /* Model */,
 				78A34FFB22F610B60012DBE2 /* Main.storyboard */,
-				7844503C22FB4C770057DAE6 /* MainViewController.swift */,
-				78A34FFE22F610BE0012DBE2 /* Assets.xcassets */,
 				78A3500022F610BE0012DBE2 /* LaunchScreen.storyboard */,
+				7844505022FB66900057DAE6 /* View */,
+				7844505122FB66960057DAE6 /* Controller */,
+				78A34FFE22F610BE0012DBE2 /* Assets.xcassets */,
 				78A3500322F610BE0012DBE2 /* Info.plist */,
+				7885D39122FCB62E00843221 /* GoogleService-Info.plist */,
 				7844504022FB61340057DAE6 /* Fonts */,
 				7844503E22FB4F310057DAE6 /* coins.json */,
 			);
@@ -192,6 +240,7 @@
 			files = (
 				78A3500222F610BE0012DBE2 /* LaunchScreen.storyboard in Resources */,
 				78A34FFF22F610BE0012DBE2 /* Assets.xcassets in Resources */,
+				7885D39222FCB62E00843221 /* GoogleService-Info.plist in Resources */,
 				7844503F22FB4F310057DAE6 /* coins.json in Resources */,
 				78A34FFD22F610B60012DBE2 /* Main.storyboard in Resources */,
 			);
@@ -246,9 +295,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7885D39422FD1FF200843221 /* ProfileViewController.swift in Sources */,
+				7885D39622FD256C00843221 /* TransactionTableViewCell.swift in Sources */,
+				7885D39C22FD4E5B00843221 /* FavouriteCollectionViewCell.swift in Sources */,
+				7885D39822FD290000843221 /* SearchViewController.swift in Sources */,
 				7844503D22FB4C770057DAE6 /* MainViewController.swift in Sources */,
 				78A34FFA22F610B60012DBE2 /* LoginViewController.swift in Sources */,
+				7844505322FB66C10057DAE6 /* CardViewCell.swift in Sources */,
+				7885D39A22FD4E4A00843221 /* SuggestedCollectionViewCell.swift in Sources */,
 				78A34FF822F610B60012DBE2 /* AppDelegate.swift in Sources */,
+				7844505522FB70C00057DAE6 /* ChartTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
