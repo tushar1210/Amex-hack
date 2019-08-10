@@ -12,6 +12,8 @@ target 'Plutus' do
    pod 'Firebase/Database'
    pod 'YRPayment'
    pod 'SVProgressHUD'
+   pod 'Kingfisher'
+   pod 'AlamofireImage'
   # Pods for Plutus
 
 end

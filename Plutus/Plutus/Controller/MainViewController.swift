@@ -28,6 +28,10 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var iexToken = "pk_980e5a69ee224df9837fbada4d4abb69"
     var iexSecret = "sk_895f5d5b8f5046e3a8f22188b569b857"
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //getTickers()

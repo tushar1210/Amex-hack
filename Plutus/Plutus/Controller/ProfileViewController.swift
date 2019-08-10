@@ -26,7 +26,10 @@ class ProfileViewController: UIViewController {
         
     }
 
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func addCard(_ sender: Any) {
     }
 }

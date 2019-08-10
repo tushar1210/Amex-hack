@@ -21,7 +21,7 @@ class TryViewController: UIViewController {
         performSegue(withIdentifier: "goback", sender: nil)
     }
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -99,6 +99,7 @@ class TryViewController: UIViewController {
     }
     
     override func touchesBegan(_: Set<UITouch>, with _: UIEvent?) {
+        self.view.endEditing(true)
         NumberTF.resignFirstResponder()
         NameTF.resignFirstResponder()
         ValidityTF.resignFirstResponder()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QcF-px-Qbn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -204,9 +204,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpV-7n-EvT">
-                                <rect key="frame" x="321" y="140" width="30" height="30"/>
+                                <rect key="frame" x="321" y="140" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.43529411759999997" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="go:" destination="t7S-ae-6fq" eventType="touchUpInside" id="WYq-1s-jAp"/>
                                 </connections>
@@ -259,9 +262,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDH-On-jCP">
-                                                            <rect key="frame" x="172" y="8" width="23" height="22"/>
+                                                            <rect key="frame" x="174" y="11" width="15" height="15"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <state key="normal" title="❤️"/>
+                                                            <state key="normal" backgroundImage="unfav"/>
                                                             <connections>
                                                                 <action selector="favButton:" destination="i6k-CP-uqR" eventType="touchUpInside" id="3IB-4e-gNq"/>
                                                             </connections>
@@ -330,9 +333,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVU-ME-VNM">
-                                                            <rect key="frame" x="172" y="8" width="23" height="22"/>
+                                                            <rect key="frame" x="175" y="11" width="15" height="15"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <state key="normal" title="❤️"/>
+                                                            <state key="normal" backgroundImage="fav"/>
                                                             <connections>
                                                                 <action selector="go:" destination="GqS-gF-XtM" eventType="touchUpInside" id="FHx-Z2-1Oa"/>
                                                             </connections>
@@ -364,11 +367,36 @@
                         <outlet property="go" destination="SpV-7n-EvT" id="uhG-UJ-rhl"/>
                         <outlet property="suggestedCollectionView" destination="Eq7-Sq-chA" id="WDn-0t-lO1"/>
                         <outlet property="tickerTF" destination="hx9-Xv-byw" id="108-Qd-5lC"/>
+                        <segue destination="8ut-3y-7T1" kind="show" identifier="search" id="WDf-RJ-cN4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEf-hU-wBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1904.8" y="-558.62068965517244"/>
+        </scene>
+        <!--Preview View Controller-->
+        <scene sceneID="Byc-Hg-u32">
+            <objects>
+                <viewController id="8ut-3y-7T1" customClass="PreviewViewController" customModule="Plutus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6b7-7K-d7I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRp-J7-XRr">
+                                <rect key="frame" x="24" y="178" width="335" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Xdf-BY-y8p"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultImage" destination="WRp-J7-XRr" id="3oa-mw-oeU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGq-X2-yIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2637.5999999999999" y="-663.41829085457277"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="kPe-uu-rEl">
@@ -653,7 +681,9 @@
     </scenes>
     <resources>
         <image name="down" width="5" height="7.5"/>
+        <image name="fav" width="9.5" height="9"/>
         <image name="graph" width="108.5" height="45"/>
         <image name="tushar" width="2738" height="2738"/>
+        <image name="unfav" width="8.5" height="8"/>
     </resources>
 </document>
