@@ -12,7 +12,11 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var transactionTable: UITableView!
-    override func viewDidLoad() {
+   
+    @IBAction func unwindToVC1(segue:UIStoryboardSegue) {
+        
+    }
+        override func viewDidLoad() {
         super.viewDidLoad()
         profileImage.clipsToBounds = true
         profileImage.layer.cornerRadius = profileImage.frame.width/2

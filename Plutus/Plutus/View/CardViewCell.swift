@@ -13,7 +13,13 @@ class CardViewCell: UICollectionViewCell {
     @IBOutlet weak var deposit: UIButton!
     @IBOutlet weak var withdraw: UIButton!
     
-    override func awakeFromNib() {
+	let one = ["355c7d","b92b27","f12711","f27121","ff00cc"]
+	let two = ["c06c84","1565c0","f5af19","8a2387","333399"]
+	let r1:[CGFloat] = [53,185,241,242,255,192,21,245,138,51]
+	let g1:[CGFloat] = [92,43,39,113,0,108,101,175,35,51]
+	let b1:[CGFloat] = [125,39,17,33,204,132,192,25,135,153]
+	
+	override func awakeFromNib() {
         //self.contentView.backgroundColor = .black
         self.backgroundColor = .clear
 		self.backgroundView?.backgroundColor = .clear
@@ -26,14 +32,14 @@ class CardViewCell: UICollectionViewCell {
 		setGradientBackground()
     }
 	func setGradientBackground() {
-		let gradientColor1 = UIColor(red: 10/255, green: 111/255, blue: 206/255, alpha: 1).cgColor
-		let gradientColor2 = UIColor(red: 99/255, green: 173/255, blue: 242/255, alpha: 1).cgColor
+		let r = Int.random(in: 3...4)
+
+		let gradientColor1 = UIColor(red: r1[r]/255, green: g1[r]/255, blue: b1[r]/255, alpha: 1).cgColor
+		let gradientColor2 = UIColor(red: r1[r+5]/255, green: g1[r+5]/255, blue: b1[r+5]/255, alpha: 1).cgColor
 		
-		let colorTop =  UIColor(red: 255.0/255.0, green: 149.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
-		let colorBottom = UIColor(red: 255.0/255.0, green: 94.0/255.0, blue: 58.0/255.0, alpha: 1.0).cgColor
 		
 		let gradientLayer = CAGradientLayer()
-		gradientLayer.colors = [gradientColor2, gradientColor1]
+		gradientLayer.colors = [gradientColor1, gradientColor2]
 		gradientLayer.locations = [0, 1]
 		gradientLayer.startPoint = CGPoint(x:0,y:0.5)
 		gradientLayer.endPoint = CGPoint(x:1,y:0.5)

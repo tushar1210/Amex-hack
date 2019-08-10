@@ -17,6 +17,9 @@
 		7885D39822FD290000843221 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7885D39722FD290000843221 /* SearchViewController.swift */; };
 		7885D39A22FD4E4A00843221 /* SuggestedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7885D39922FD4E4A00843221 /* SuggestedCollectionViewCell.swift */; };
 		7885D39C22FD4E5B00843221 /* FavouriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7885D39B22FD4E5B00843221 /* FavouriteCollectionViewCell.swift */; };
+		7885D39E22FE77BE00843221 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7885D39D22FE77BE00843221 /* AddCardViewController.swift */; };
+		7885D3A022FE800700843221 /* TryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7885D39F22FE800700843221 /* TryViewController.swift */; };
+		7885D3A222FEA38A00843221 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7885D3A122FEA38A00843221 /* Constants.swift */; };
 		78A34FF822F610B60012DBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A34FF722F610B60012DBE2 /* AppDelegate.swift */; };
 		78A34FFA22F610B60012DBE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A34FF922F610B60012DBE2 /* LoginViewController.swift */; };
 		78A34FFD22F610B60012DBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A34FFB22F610B60012DBE2 /* Main.storyboard */; };
@@ -51,6 +54,9 @@
 		7885D39722FD290000843221 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Plutus/View/SearchViewController.swift; sourceTree = SOURCE_ROOT; };
 		7885D39922FD4E4A00843221 /* SuggestedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedCollectionViewCell.swift; sourceTree = "<group>"; };
 		7885D39B22FD4E5B00843221 /* FavouriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		7885D39D22FE77BE00843221 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddCardViewController.swift; path = Pods/AddCardViewController.swift; sourceTree = SOURCE_ROOT; };
+		7885D39F22FE800700843221 /* TryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryViewController.swift; sourceTree = "<group>"; };
+		7885D3A122FEA38A00843221 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		78A34FF422F610B60012DBE2 /* Plutus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plutus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A34FF722F610B60012DBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A34FF922F610B60012DBE2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -117,8 +123,11 @@
 		7844505122FB66960057DAE6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7885D39F22FE800700843221 /* TryViewController.swift */,
+				7885D39D22FE77BE00843221 /* AddCardViewController.swift */,
 				7885D39722FD290000843221 /* SearchViewController.swift */,
 				7844503C22FB4C770057DAE6 /* MainViewController.swift */,
+				7885D3A122FEA38A00843221 /* Constants.swift */,
 				78A34FF722F610B60012DBE2 /* AppDelegate.swift */,
 				78A34FF922F610B60012DBE2 /* LoginViewController.swift */,
 				7885D39322FD1FF200843221 /* ProfileViewController.swift */,
@@ -295,12 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7885D3A022FE800700843221 /* TryViewController.swift in Sources */,
 				7885D39422FD1FF200843221 /* ProfileViewController.swift in Sources */,
 				7885D39622FD256C00843221 /* TransactionTableViewCell.swift in Sources */,
 				7885D39C22FD4E5B00843221 /* FavouriteCollectionViewCell.swift in Sources */,
 				7885D39822FD290000843221 /* SearchViewController.swift in Sources */,
 				7844503D22FB4C770057DAE6 /* MainViewController.swift in Sources */,
 				78A34FFA22F610B60012DBE2 /* LoginViewController.swift in Sources */,
+				7885D3A222FEA38A00843221 /* Constants.swift in Sources */,
+				7885D39E22FE77BE00843221 /* AddCardViewController.swift in Sources */,
 				7844505322FB66C10057DAE6 /* CardViewCell.swift in Sources */,
 				7885D39A22FD4E4A00843221 /* SuggestedCollectionViewCell.swift in Sources */,
 				78A34FF822F610B60012DBE2 /* AppDelegate.swift in Sources */,

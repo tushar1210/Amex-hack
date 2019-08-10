@@ -11,12 +11,12 @@ import UIKit
 class ChartTableViewCell: UITableViewCell {
 
     @IBOutlet weak var stockImageView: UIImageView!
+    @IBOutlet weak var graphImage: UIImageView!
     @IBOutlet weak var stockTickLabel: UILabel!
     @IBOutlet weak var stockHoldLabel: UILabel!
     @IBOutlet weak var stockCurrencyLabel: UILabel!
     @IBOutlet weak var stockStatusImage: UIImageView!
     @IBOutlet weak var stockNetLabel: UILabel!
-    @IBOutlet weak var graphView: UIView!
     @IBOutlet weak var stockPriceLabel: UILabel!
     
     @IBOutlet weak var stockNameLabel: UILabel!

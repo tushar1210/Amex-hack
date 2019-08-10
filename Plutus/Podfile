@@ -6,9 +6,7 @@ target 'Plutus' do
   use_frameworks!
    pod 'Alamofire'
    pod 'SwiftyJSON'
-   #pod 'Realm'
-   #pod 'Charts'
-   pod 'SwiftCharts'
+   pod 'SwiftChart'
    pod 'lottie-ios'
    pod 'Firebase/Core'
    pod 'Firebase/Database'

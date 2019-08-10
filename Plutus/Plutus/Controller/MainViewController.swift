@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftCharts
 import Firebase
 import Alamofire
 import SwiftyJSON
@@ -18,16 +17,20 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var chartTable: UITableView!
     
     var stockJson = JSON()
+    var balance = ["$10019","$559","$1832","$1701","$38762"]
     var stockCount = 0
     let advantageKey = "A6XGJN1FZIWPD5KZ"
     var allDataPoints = Dictionary<String, [String]>()
     var names = Dictionary<String,String>()
     var tickers=[String]()
     var net="",price="",change=""
+    var iex = URL(string: "https://cloud.iexapis.com/")
+    var iexToken = "pk_980e5a69ee224df9837fbada4d4abb69"
+    var iexSecret = "sk_895f5d5b8f5046e3a8f22188b569b857"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getTickers()
+        //getTickers()
         chartTable.backgroundColor = .clear
         chartTable.showsVerticalScrollIndicator=false
         collectionView.delegate = self
@@ -36,19 +39,20 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         chartTable.dataSource=self
         chartTable.separatorStyle = .none
         chartTable.allowsSelection=false
-//        getPlottingData(ticker: "MSFT")
-//        getNetData(ticker: "MSFT")
+
     }
 }
 
 extension MainViewController{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return balance.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath) as! CardViewCell
+        cell.amountLabel.text = balance[indexPath.row]
+        
         return cell
     }
 }
@@ -120,7 +124,7 @@ extension MainViewController{
 
 extension MainViewController:UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return tickers.count
+        return ticker.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -139,12 +143,22 @@ extension MainViewController:UITableViewDelegate,UITableViewDataSource{
         let cell = chartTable.dequeueReusableCell(withIdentifier: "chartCell", for: indexPath) as! ChartTableViewCell
         
         
-        cell.stockNameLabel.text = names[tickers[indexPath.section]]
-        cell.stockTickLabel.text = tickers[indexPath.section]
-        cell.stockPriceLabel.text = price
-        cell.stockNetLabel.text = net
-        cell.stockHoldLabel.text = change
-        print(net,price,change,indexPath.section)
+        cell.stockNameLabel.text = companyName[indexPath.section]
+        cell.stockTickLabel.text = ticker[indexPath.section]
+        cell.stockImageView.image = UIImage(named: ticker[indexPath.section])
+        cell.stockPriceLabel.text = stockPrice[indexPath.section]
+        cell.stockNetLabel.text = stovalue[indexPath.section]
+        if(status[indexPath.section] == "Hold"){
+            cell.stockHoldLabel.textColor = .blue
+            cell.stockStatusImage.image = UIImage(named: "down")
+            cell.graphImage.image = UIImage(named:"graph")
+            
+        }else{
+            cell.stockHoldLabel.textColor = .green
+            cell.stockStatusImage.image = UIImage(named: "up")
+            cell.graphImage.image = UIImage(named: "upgraph")
+        }
+        cell.stockHoldLabel.text = status[indexPath.section]
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
